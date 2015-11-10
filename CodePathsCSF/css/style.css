@@ -1,0 +1,49 @@
+﻿* {
+    margin:0;
+
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom:20px;
+}
+html, body {
+    height:100%;
+
+}
+body{
+    overflow:hidden;
+
+}
+.menuview{
+    position: absolute;
+    height:100%;
+    width:60%;
+  
+
+}
+.menuview ul {
+    padding:0;
+
+
+    }
+.menuview ul li{
+    list-style:none;
+    padding: 20px 30px; 
+    font-size:130%;
+
+    border-bottom:2px solid #4cff00;
+    background-color: lavender;
+    
+
+}
+.menuview ul li:nth-child(odd) {
+    background-color: white;
+}
+.view{
+    position:absolute;
+    height:100%;
+    width:100%;
+    background-color:aqua;
+    left:100%;
+
+
+}

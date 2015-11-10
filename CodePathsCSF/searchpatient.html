@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Patient</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type="text/css" href="css/bootstrap.css">
+    <link rel='map' type="text/css" href="css/bootstrap.css.map">
+    <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href="css/bootstrap-theme.css">
+    <link rel='map' type="text/css" href="css/bootstrap-theme.css.map">
+    <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
+   
+
+
+    <style>
+        .footer {
+            margin-bottom: 10px;
+        }
+
+        tr, td, table {
+            width:100%;
+         
+
+        }
+        li {
+        }
+
+        
+   
+    </style>
+</head>
+
+
+<body>
+    <form id="form1">
+        <div id="divContainer">
+
+        </div>
+    </form>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="teamcare2.png" class="img-responsive" alt="teamcare logo" />
+              
+               
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Basic Info</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">Benefits</a>
+                    </li>
+                    <li class="dropdown">
+                </ul>
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#">Eligibility</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other options <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Feedback</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+
+        <br />
+        <br />
+        <span class="glyphicon glyphicon-info-user"></span>
+        <div class="input-group">
+            <span class="input-group-addon">Search Patient ID</span>
+            <input type="text" class="form-control" id="patient-id"
+                   placeholder="Enter Patient ID" />
+         
+        </div>
+        <br />
+
+        <br />
+
+        <button type="button" class="btn btn-primary btn-lg btn-block" id="submit" onclick="clicked()">
+            Submit Data
+        </button>
+
+        <br />
+        <br />
+        </div>
+        <div class="container-fluid">
+           
+            <div style="width: 100%; background-color: white;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 45%;">Claim Status</button>
+                <button type="button" class="btn btn-default btn-lg" style="width: 45%;">App Feedback</button>
+                
+            </div>
+            <div style="width: 100%; background-color: white;">
+                <button type="button" class="btn btn-default btn-lg" style="width: 45%;">Download Forms</button>
+                <button type="button" class="btn btn-default btn-lg" style="width: 45%;">Filling Information</button>
+
+            </div>
+
+            
+
+</div>
+
+    <div data-role="footer" data-theme="b">
+
+    </div>
+
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">  
+    <script type="text/javascript" src="js/search.js">
+        </script>
+
+
+
+</body>
+</html>
+
