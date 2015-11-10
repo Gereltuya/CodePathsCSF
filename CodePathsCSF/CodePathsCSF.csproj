@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\button.css" />
+    <Content Include="css\glyphicons.css" />
     <Content Include="css\jquery.smartmenus.bootstrap.css" />
     <Content Include="css\style.css" />
     <Content Include="diffnav.html" />

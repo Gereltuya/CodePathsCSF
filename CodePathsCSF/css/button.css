@@ -1,0 +1,12 @@
+﻿.menu-btn{
+  font-size:18px;
+  width:49%;
+
+}
+
+@media screen and (max-width:315px) {
+    .menu-btn {
+       
+        width:100%;
+    }
+}
