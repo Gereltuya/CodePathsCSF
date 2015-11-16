@@ -14,7 +14,33 @@
     <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
    <link rel='stylesheet' type="text/css" href="css/glyphicons.css" />
     <link rel='stylesheet' type="text/css" href="css/table.css"/>
+    <script type="text/javascript">
 
+        jQuery(document).ready(function () {
+            jQuery.ajax({
+
+                url: "http://192.168.1.1/apiservice/fetchdata.php",
+                type: "POST",
+                dataType: "json",
+                data: "param=no",
+                success: function (html) {
+                    var DOM = "";
+                    jQuery.each(html, function (key, value) {
+
+                    });
+
+                    DOM.html(html);
+
+                }, error: function (e) {
+
+                    alert(e);
+
+                }
+
+            });
+        });
+         
+    </script>
 
    
 </head>
@@ -64,7 +90,7 @@
                     <li>
                         <a href="#">Eligibility</a>
                     </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <li class="dropdown">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other options <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -90,6 +116,8 @@
     </nav>
    
 <div class="panel-heading">
+    <p> You are viewing patient Dave Jones</p>
+    <hr />
 </div>
 
         <div class="mainbody-section text-center" style="padding-left: 5px; padding-right: 5px;">
@@ -99,7 +127,7 @@
 
                         <div class="panel-body">
                             <div class="col-md-3">
-                                <table>
+                                <table id="DOM">
                                     <thead>
                                         <tr>
                                             <th>Member ID</th>
@@ -129,6 +157,8 @@
                         </div>
                     </div>
 
+                    <br /> 
+                    To view more information, please select >>
                     <hr />
 
                     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">

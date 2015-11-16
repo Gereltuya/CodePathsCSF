@@ -1,13 +1,51 @@
-﻿.glyphicon {
+﻿
 
-            font-size:50px;
+
+
+.index glyphicon {
+
+            font-size:45px;
 
             display:block;
-            color:#1376BC;
+            color:#FFF;
+         
+
 
         }
 .panel-body p {
-    background-color:#eee;
-    border-radius:10px;
+    color: #FFF;
+background-color: #449D44;
+border-color: #255625;
+border-radius:2px;
+
 
 }
+
+
+a
+{
+    color: #FFF;
+    font-size:small;
+
+}
+
+.nav {
+
+}
+.navbar img {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+
+.panel-footer p {
+
+    font-size: 10px;
+    
+}
+
+.panel-footer glyphicon {
+    font-size:10px;
+}
+
+

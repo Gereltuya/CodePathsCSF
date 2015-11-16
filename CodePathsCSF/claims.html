@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum=scale=1, user-scalable=no">
     <title>Search Patient</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,22 +12,22 @@
     <link rel='stylesheet' type="text/css" href="css/bootstrap-theme.css">
     <link rel='map' type="text/css" href="css/bootstrap-theme.css.map">
     <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href="css/button.css" >
 
-   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-    <style>
-      .navbar img {
-    padding-left: 20px;
-    padding-bottom: 5px;
-}
 
-      
-
-        
-   
+    <style type="text/css">
+       .panel {
+           background-color: #337ab7;
+       }
     </style>
+
+
+   
 </head>
 
 
@@ -50,8 +51,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <img src="teamcare2.png" class="img-responsive" alt="teamcare logo" />
-               
-            
+     
+              
                
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -95,61 +96,69 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="navbar navbar-right">
-            <h4 class="navbar-text"><span class="glyphicon glyphicon-user"></span>You are logged in as Susan Davis</h4>
+
+    <div class="container-fluid">
+        <h1>Claims</h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                <p >Service Description | Date of Service: 10/20/2015 
+                  <span class="glyphicon glyphicon-chevron-right"></span> </p>
             
-             </div> 
-         
-    <br /> 
-    <br />
-    <div class="container">
-        <span class="glyphicon glyphicon-info-user"></span>
-        <div class="input-group">
-            <span class="input-group-addon">Search Patient ID</span>
-            <input type="text" class="form-control" id="patient-id"
-                   placeholder="Enter Patient ID" />
-         
-        </div>
-        <br />
+     </a>
+           
+               
+            <div class="list-group">
+                <a href="#" class="list-group-item ">
+                    <p>
+                        Service Description | Date of Service: 10/20/2015
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </p>
 
-        <br />
-        <br />
+                </a>
 
-        <button style="align-content:center;"type="button" class="btn btn-success btn-lg btn-block" id="submit" onclick="clicked()">
-            <span class="glyphicon glyphicon-search"> </span>
-        </button>
 
-        <br />
-        <br />
-        </div>
-        <div class="navbar navbar-brand">
-            <div>
-                <a class="btn btn-default btn-lg menu-btn">All Claim Status</a>
-                <a class="btn btn-default btn-lg menu-btn">App Feedback</a>
-            </div>
 
-            <div>
-                <a class="btn btn-default btn-lg menu-btn"><i class="fa fa-user"></i>Download Forms</a>
-                <a class="btn btn-default btn-lg menu-btn">Log Out</a>
-            </div>
-          
 
-            
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <p>
+                            Service Description | Date of Service: 10/20/2015
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </p>
 
-</div>
+                    </a>
 
-    <div data-role="footer" data-theme="b">
+
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">
+                            <p>
+                                Service Description | Date of Service: 10/20/2015
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </p>
+
+                        </a>
+
+
+                    </div>
 
     </div>
+     
+                <div class="navbar navbar-default navbar-fixed-bottom">
+                    <div class="container">
+                        <p class="navbar-text pull-left"><span class=" glyphicon glyphicon-arrow-left"> </span> Go back
+                     | <span class="glyphicon glyphicon-home text-center"> </span>    Home</p>
+
+                        <p class="navbar-text pull-right"> <span class="glyphicon glyphicon-search"></span>Start a new search </p>
+                    </div>
+                </div>
+               
+
+            <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+            <script type="text/javascript" src="js/search.js">
+            </script>
 
 
 
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">  
-    <script type="text/javascript" src="js/search.js">
-        </script>
-
-
-
-</body>
+        </body>
 </html>
 

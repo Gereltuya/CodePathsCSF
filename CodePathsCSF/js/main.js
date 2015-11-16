@@ -9,8 +9,7 @@ function clicked() {
 	if (user.value==coruser){
 		
 		if(pass.value==corpass){
-			window.alert("You are logged in as"+user.value);
-			
+		    window.open('searchpatient.html');
 			
 		}
 		else {

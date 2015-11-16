@@ -66,11 +66,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="clientjson.html" />
+    <Content Include="contactpage.html" />
     <Content Include="css\button.css" />
+    <Content Include="css\glyphicons - Copy.css" />
     <Content Include="css\glyphicons.css" />
     <Content Include="css\jquery.smartmenus.bootstrap.css" />
     <Content Include="css\style.css" />
+    <Content Include="css\table.css" />
+    <Content Include="dentalinfo.html" />
     <Content Include="diffnav.html" />
+    <Content Include="download_forms.html" />
+    <Content Include="fetchdata.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="getjson.aspx" />
     <Content Include="js\search.js" />
     <Content Include="login.html" />
     <Content Include="js\app.js" />
@@ -86,6 +96,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="claims.html" />
+    <Content Include="test.aspx" />
+    <Content Include="testphp.html" />
     <Content Include="patient_index.html" />
     <Content Include="youtube.html" />
     <None Include="Properties\PublishProfiles\codepaths.pubxml" />
@@ -114,7 +127,21 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="getjson.aspx.cs">
+      <DependentUpon>getjson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getjson.aspx.designer.cs">
+      <DependentUpon>getjson.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
