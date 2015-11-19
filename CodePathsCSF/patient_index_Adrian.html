@@ -2,18 +2,23 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum=scale=1, user-scalable=no">
+    
     <title>Search Patient</title>
+    <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel='stylesheet' type="text/css" href="css/bootstrap.css">
     <link rel='map' type="text/css" href="css/bootstrap.css.map">
     <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
     <link rel='stylesheet' type="text/css" href="css/bootstrap-theme.css">
     <link rel='map' type="text/css" href="css/bootstrap-theme.css.map">
-    <link rel='stylesheet' type="text/css" href="css/bootstrap.min.css">
-   <link rel='stylesheet' type="text/css" href="css/glyphicons.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+    <link rel='stylesheet' type="text/css" href="css/glyphicons.css" />
     <link rel='stylesheet' type="text/css" href="css/table.css"/>
+   
+   
+          
 
 
    
@@ -21,6 +26,9 @@
 
     
 <body>
+   
+  
+
     <form id="form1">
         <div id="divContainer">
 
@@ -40,31 +48,27 @@
                     <span class="icon-bar"></span>
                 </button>
                 <img src="teamcare2.png" class="img-responsive" alt="teamcare logo" />
-              
-               
 
-               
-               
 
-               
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">Basic Info</a>
+                        <a href="patient_index_Adrian.html">Basic Info</a>
                     </li>
                     <li class="divider"></li>
                     <li>
-                        <a href="#">Benefits</a>
+                        <a href="eligibility_Adrian.html">Benefits</a>
                     </li>
                     <li class="dropdown">
                 </ul>
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="#">Eligibility</a>
+                        <a href="">Claims</a>
                     </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <li class="dropdown">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other options <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -90,35 +94,39 @@
     </nav>
    
 <div class="panel-heading">
+    <h3 style="background-color:#449D44; color:white;">Patient Information</h3>
 </div>
 
         <div class="mainbody-section text-center" style="padding-left: 5px; padding-right: 5px;">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                     <div class="menu-item blue">
-
+                    
                         <div class="panel-body">
                             <div class="col-md-3">
                                 <table>
                                     <thead>
-                                        <tr>
+                                        <tr> 
+                                          
                                             <th>Member ID</th>
-                                            <th>Lastname:</th>
-                                            <th>Firstname:</th>
-                                            <th>Date of birth:</th>
-                                            <th>Subsciber:</th>
-                                            <th>Relationship:</th>
+                                            <th>Patient Name</th>
+                                            <th>Date of birth</th>
+                                            <th>Subscriber</th>
+                                            <th>Relationship</th>
+                                            <th>Family Member</th>
+                                            
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td data-label="Member ID">123456789</td>
-                                            <td data-label="Lastname">Nancy</td>
-                                            <td data-label="Firstname">Hoffman</td>
-                                            <td data-label="Date of birth">10/22/1955</td>
-                                            <td data-label="Subsciber">Nancy Hoffman</td>
-                                            <td data-label="Relationship">Member</td>
+                                            <td data-label="Member ID" id="MemberID" style="background-color:#d9edf7;"> 992020</td>
+                                            <td data-label="Patient Name" id="patient_name" > Adrian Arroyo </td>
+                                            <td data-label="Date of birth" id="DOB" style="background-color:#d9edf7;"> 10/25/1994</td>
+                                            <td data-label="Subscriber"id="Subscriber">Adrian Arroyo</td>
+                                            <td data-label="Relationship" id="Relationship" style="background-color:#d9edf7;">Member</td>
+                                            <td data-label="Family Member" id="Fmembers">Melissa Arroyo</td>
+                                         
                                         </tr>
 
                                     </tbody>
@@ -129,7 +137,7 @@
                         </div>
                     </div>
 
-                    <hr />
+                
 
                     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                         <div class="container-fluid">
@@ -137,19 +145,19 @@
                             <div class="panel-body ">
                                 <div class=" col-xs-6">
                                     <p style="padding: 2px;">
-                                        <i class="glyphicon glyphicon-usd index" style="font-size: 45px; display: inherit;"></i><a href="#" target="_blank" style="text-decoration: none;">Plan Info</a>
+                                        <i class="glyphicon glyphicon-leaf index" style="font-size: 45px; display: inherit;"></i><a href="eligibility_Adrian.html" target="_blank" style="text-decoration: none;">Eligibility </a>
                                     </p>
                                 </div>
                                 <div class="col-xs-6">
                                     <p style="padding: 2px;">
-                                        <i class="glyphicon glyphicon-earphone index" style="font-size: 45px; display: inherit;"></i><a href="#" target="_blank" style="text-decoration: none;">Benefits</a>
+                                        <i class="glyphicon glyphicon-heart index" style="font-size: 45px; display: inherit;"></i><a href="#" target="_blank" style="text-decoration: none;">Accumulator</a>
                                     </p>
 
                                 </div>
 
                                 <div class="col-xs-6">
                                     <p style="padding-top:2px;">
-                                        <i class="glyphicon glyphicon-th index" style="font-size: 45px; display: inherit;"></i><a href="#" target="_blank" style="text-decoration: none;">Claims</a>
+                                        <i class="glyphicon glyphicon-file index" style="font-size: 45px; display: inherit;"></i><a href="" target="_blank" style="text-decoration: none;">Claims</a>
                                     </p>
                                 </div>
                                 <div class="col-xs-6">
@@ -186,12 +194,12 @@
 
             <p class="navbar-text pull-right"> <span class="glyphicon glyphicon-search"></span>Start a new search </p>
         </div>
-    </div>
+    </div>  
 
 
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-        <script type="text/javascript" src="js/search.js">
-        </script>
+  
+
+       
 
 
 

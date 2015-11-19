@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+    <script>
+
+        var jsonData;
+        $(document).ready(function () {
+          getTheData();
+        });
+
+        function getTheData(){
+            //live server call
+            $.ajax({
+                url: "getjson.aspx",
+                success: function (result) {
+                    var j = JSON.parse(result);
+                    console.log(j);
+                    jsonData = j;
+                    loadtable();
+                }
+            });
+        }
+            //server stub - comment out when ready to test from server
+            //jsonData = serverStub;
+            //console.log(jsonData);
+        
+        function loadtable(){
+
+        
+    //populate a datatable from the json data - more complete options for display here
+//https://datatables.net/reference/option/
+    $('#table').DataTable( {
+        "data": jsonData.Records,
+        "columns": [
+            { data: "patient_name", title: "Patient's date of birth" },
+            { data: "patient_dob", title: "Patient's name" },
+            { data: "subscriber_name", title: "Subscriber's Name "},
+
+        ],
+
+        
+        "paging":   false,
+        "ordering": true,
+        "info":     false,
+        "searching": false
+    } );
+
+}
+        
+
+    </script>
+
+
+
+</head>
+<body>
+
+    <table id="table" class="display" width="100%"></table>
+
+
+
+</body>
+</html>

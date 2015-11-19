@@ -66,7 +66,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="clientjson.html" />
+    <Content Include="aspx\memberjson.aspx" />
+    <Content Include="claims1.html" />
+    <Content Include="css\index.css" />
+    <Content Include="css\table1.css" />
+    <Content Include="accumulator_Nancy.html" />
+    <Content Include="css\tabs.css" />
+    <Content Include="eligibility_Nancy.html" />
+    <Content Include="FAQ.html" />
+    <Content Include="filing.html" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="js\jquery-1.11.3.min.js" />
+    <Content Include="claims_Nancy.html" />
+    <Content Include="patient_index_Adrian.html" />
+    <Content Include="eligibility_Adrian.html" />
+    <Content Include="TestFiles\clientjson.html" />
     <Content Include="contactpage.html" />
     <Content Include="css\button.css" />
     <Content Include="css\glyphicons - Copy.css" />
@@ -77,18 +91,17 @@
     <Content Include="dentalinfo.html" />
     <Content Include="diffnav.html" />
     <Content Include="download_forms.html" />
-    <Content Include="fetchdata.php">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="getjson.aspx" />
+    <Content Include="employee.html" />
+    <Content Include="TestFiles\getjson.aspx" />
     <Content Include="js\search.js" />
     <Content Include="login.html" />
     <Content Include="js\app.js" />
     <Content Include="js\jquery.smartmenus.bootstrap.js" />
     <Content Include="js\jquery.smartmenus.bootstrap.min.js" />
-    <Content Include=".html" />
+    <Content Include="TestFiles\.html" />
     <Content Include="js\jquery.transit.js" />
     <Content Include="js\main.js" />
+    <Content Include="TestFiles\member.aspx" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap.css.map" />
@@ -97,10 +110,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="claims.html" />
-    <Content Include="test.aspx" />
-    <Content Include="testphp.html" />
-    <Content Include="patient_index.html" />
-    <Content Include="youtube.html" />
+    <Content Include="TestFiles\test.aspx" />
+    <Content Include="TestFiles\testphp.html" />
+    <Content Include="patient_index_Nancy.html" />
+    <Content Include="TestFiles\WebForm1.aspx" />
+    <Content Include="TestFiles\youtube.html" />
     <None Include="Properties\PublishProfiles\codepaths.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -127,20 +141,43 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="getjson.aspx.cs">
+    <Compile Include="aspx\memberjson.aspx.cs">
+      <DependentUpon>memberjson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspx\memberjson.aspx.designer.cs">
+      <DependentUpon>memberjson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestFiles\Employee.cs" />
+    <Compile Include="TestFiles\getjson.aspx.cs">
       <DependentUpon>getjson.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="getjson.aspx.designer.cs">
+    <Compile Include="TestFiles\getjson.aspx.designer.cs">
       <DependentUpon>getjson.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestFiles\member.aspx.cs">
+      <DependentUpon>member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestFiles\member.aspx.designer.cs">
+      <DependentUpon>member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestFiles\member.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="test.aspx.cs">
+    <Compile Include="TestFiles\test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="test.aspx.designer.cs">
+    <Compile Include="TestFiles\test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestFiles\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestFiles\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

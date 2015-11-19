@@ -2,9 +2,13 @@
     <html>
     <head>
         <title>Contact Page</title>
-        <link href="Content/bootstrap.min.css" rel="stylesheet" />
 
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+       
     </head>
     <body>
 
@@ -54,24 +58,24 @@
                 <form action="contact-form-submission.php" method="POST" role="form">
                     <div class="well">
                         <div class="row">
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-xs-4">
                                 <label for="input1">Name</label>
                                 <input type="text" id="input1" class="form-control" name="contact_name">
                             </div>
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-xs-4">
                                 <label for="input2">Email Address</label>
                                 <input type="email" id="input2" class="form-control" name="contact_email">
                             </div>
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-xs-4">
                                 <label for="input3">Phone Number</label>
                                 <input type="tel" id="input3" class="form-control" name="contact_phone">
                             </div>
                             <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-xs-12">
                                 <label for="input4">Message</label>
                                 <textarea id="input4" rows="6" class="form-control" name="contact_message"></textarea>
                             </div>
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-xs-12">
                                 <input type="hidden" value="contact" name="save">
                                 <button class="btn btn-primary btn-lg" type="submit">Submit</button>
                             </div>
@@ -79,9 +83,20 @@
                     <a class="back-to-top pull-right glyphicon glyphicon-arrow-up btn-lg" href="#" title="Top">Back to Top.</a>
                 </form>
             </div>
+        <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">
+                <span class=" glyphicon glyphicon-arrow-left" style=""> </span><a style="color:black" href="searchpatient.html"> Go back </a>
+                | <span class="glyphicon glyphicon-home text-center"> </span>  <a style="color:black" href="searchpatient.html"> Home</a>
+            </p>
+
+            <p class="navbar-text pull-right"><span class="glyphicon glyphicon-search"></span><a style="color:black" href="searchpatient.html">Start a new search</a></p>
+        </div>
+        </div>
 
 
-            <script src="Scripts/jquery-2.1.4.min.js"></script>
-            <script src="Scripts/bootstrap.min.js"></script>
+
+            <script src="js/jquery-2.1.4.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
