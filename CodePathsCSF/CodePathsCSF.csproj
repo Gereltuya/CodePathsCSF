@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="aspx\memberjson.aspx" />
     <Content Include="claims1.html" />
+    <Content Include="config.xml" />
     <Content Include="css\index.css" />
     <Content Include="css\table1.css" />
     <Content Include="accumulator_Nancy.html" />
