@@ -94,7 +94,7 @@
     <Content Include="employee.html" />
     <Content Include="TestFiles\getjson.aspx" />
     <Content Include="js\search.js" />
-    <Content Include="login.html" />
+    <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\jquery.smartmenus.bootstrap.js" />
     <Content Include="js\jquery.smartmenus.bootstrap.min.js" />
